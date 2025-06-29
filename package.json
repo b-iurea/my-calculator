@@ -21,10 +21,13 @@
     ],
     "linux": {
       "target": "AppImage",
-      "category": "Utility"
+      "category": "Utility",
+      "executableName": " MyCalculator",
+        "asarUnpack": ["**/chrome-sandbox"]
     },
     "win": {
       "target": "nsis"
-    }
+    },
+    "afterSign": "./disable-sandbox.js"
   }
 }
